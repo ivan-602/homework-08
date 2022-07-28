@@ -1,0 +1,34 @@
+.features__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features__item {
+	width: 270px;
+}
+
+.features__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	text-transform: uppercase;
+	color: $title-text-color;
+	margin-bottom: 10px;
+}
+
+.features__text {
+	font-size: 14px;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
+}
+
+.features__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 270px;
+	height: 120px;
+	background: $team-bckg;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
