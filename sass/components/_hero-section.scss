@@ -1,28 +1,72 @@
 .hero {
   background-color: $section-color;
-  padding: 199px 0 201px 0;
+  padding: 118px 0;
   margin: 0 auto;
   text-align: center;
   max-width: 1600рх;
-  width: 1600px;
-  height: 600px;
   background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
-    url(../images/banner.jpg);
-  background-size: contain;
+    url(../../images/mobile/Header\ img.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
+      url(../../images/mobile/Header\ img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
+      url(../../images/tablet/Header\ img.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
+        url(../../images/tablet/Header\ img@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
+      url(../../images/desktop/hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $banner-gradient, $banner-gradient),
+        url(../../images/desktop/hero@2x.jpg);
+    }
+  }
+}
+
+// !
 
 .hero__title {
   color: $hero-title;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  width: 696px;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  //   width: 696px;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__button {
